@@ -1,0 +1,97 @@
+.pagina {
+  background-color: #b36b6f;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  background-color: #b36b6f;
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 95%;
+  max-width: 600px;
+}
+
+/* Escopo dos elementos globais dentro da classe .formulario */
+.formulario fieldset {
+  background-color: #b36b6f;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 20px 25px;
+}
+
+.formulario legend {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.instrucoes {
+  display: block;
+  width: 100%;
+  color: white;
+  margin-bottom: 12px;
+  height: 50px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.formulario input[type="checkbox"],
+.formulario input[type="radio"] {
+  margin-right: 5px;
+}
+
+.formulario textarea {
+  height: 80px;
+}
+
+/* Botão */
+.formulario button {
+  margin-top: 15px;
+  background-color: white;
+  color: #b36b6f;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.formulario button:hover {
+  background-color: #f4e4e5;
+}
+
+.voltar {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+}
+
+.link {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}

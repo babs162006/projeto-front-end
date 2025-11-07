@@ -1,0 +1,128 @@
+/* ---------- Reset e configurações básicas ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffe8f0;
+  color: #cf8a8d;
+  line-height: 1.6;
+}
+
+/* ---------- Links ---------- */
+a {
+  text-decoration: none;
+  color: #cf8a8d;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* ---------- Imagens ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- Botões ---------- */
+button {
+  background-color: #cf8a8d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b55b64;
+}
+
+/* ---------- Header ---------- */
+header {
+  width: 100%;
+  max-height: 100px;
+  padding: 15px 30px;
+  background-color: #cf8a8d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 80px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 8px 12px;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #ffe8f0;
+  color: #cf8a8d;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #ffe8f0;
+  text-align: center;
+  padding: 20px 10px;
+  color: #cf8a8d;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #cf8a8d;
+  margin: 10px auto;
+  width: 80%;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #cf8a8d;
+}
+
+/* ---------- Tipografia global básica ---------- */
+h1, h2, h3, p {
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  color: #cf8a8d;
+  font-weight: bold;
+}
+
+p {
+  color: #cf8a8d;
+  padding-top: 10px;
+  float: none;
+  height: auto;
+}
