@@ -19,7 +19,7 @@ export default function ImagensPage() {
         <section
           key={img.id}
           className={styles.card}
-          onClick={() => router.push(`/imagens/${img.id}`)}
+          onClick={() => router.push(`/encontros/${img.id}`)}
         >
           <Image
             src={img.src}
