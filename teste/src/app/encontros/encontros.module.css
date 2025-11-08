@@ -60,6 +60,15 @@
   opacity: 1;
 }
 
+.titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e3949f;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 /* 🔸 Responsividade para telas menores */
 @media (max-width: 768px) {
   .container {
