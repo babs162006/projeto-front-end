@@ -14,7 +14,6 @@
   max-width: 600px;
 }
 
-/* Escopo dos elementos globais dentro da classe .formulario */
 .formulario fieldset {
   background-color: #b36b6f;
   border: 1px solid #ffffff;
@@ -64,7 +63,7 @@
   height: 80px;
 }
 
-/* Botão */
+
 .formulario button {
   margin-top: 15px;
   background-color: white;
