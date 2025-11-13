@@ -158,11 +158,11 @@ Por fim, o bloco @media screen and (max-width: 768px) garante a responsividade: 
 
 # Parte incremental do API
 
-<img width="782" height="394" alt="image" src="https://github.com/user-attachments/assets/d7e3dd7b-92d9-4861-b9e7-a0fd3d24c905" />
+<img width="795" height="433" alt="image" src="https://github.com/user-attachments/assets/7ccdb303-3c1c-402c-b971-7e6166df5ba1" />
 
-O código page.js do formulário cria a página principal de inscrição do WomanTech. Ele define um componente React com "use client" para permitir interação direta no navegador e importa o CSS do arquivo formswoman.module.css. O componente importa o hook useState do React para controlar o estado de uma variável chamada dogUrl, inicialmente nula.
+O código page.js do formulário cria a página principal de inscrição do WomanTech. Ele define um componente React com "use client" para permitir interação direta no navegador e importa o CSS do arquivo formswoman.module.css. O componente importa o hook useState do React para guardar o link da imagem do cachorro e useEffect para reagir a mudanças nesse estado.
 
-Quando o formulário é enviado (função handleSubmit), o evento padrão do navegador é impedido com event.preventDefault(), e é gerado um número aleatório (randomId) para compor uma URL dinâmica do serviço place.dog, que retorna uma imagem aleatória de cachorro. Essa URL é salva em dogUrl com setDogUrl(url), e uma mensagem de confirmação (“Formulário enviado!”) é exibida com alert().
+Quando o formulário é enviado, a função handleSubmit impede o recarregamento da página e define dogUrl como "loading". Isso faz o useEffect ser executado, gerando uma nova URL de imagem aleatória e exibindo um alerta de confirmação. Assim, o código controla o comportamento do formulário e a atualização da imagem de forma automática e reativa.
 
 # Conteúdo do formulário
 
@@ -177,9 +177,9 @@ A página contém um formulário completo dentro de main e fieldset, reunindo ca
 
 # Parte funcional do API
 
-<img width="761" height="329" alt="image" src="https://github.com/user-attachments/assets/8c43e103-296f-4f13-9b64-f29a1ecfd171" />
+<img width="762" height="235" alt="image" src="https://github.com/user-attachments/assets/f5baf593-797f-4c5a-ab6c-23877d92af95" />
 
-Após o envio, se dogUrl tiver valor (ou seja, se o formulário já foi enviado), o código exibe uma imagem aleatória de cachorro dentro de uma <section> com classe dogContainer, acompanhada da legenda “Obrigada por ter se inscrito!".
+Esse trecho usa uma renderização condicional em React. Ele verifica se existe um valor em dogUrl e se ele é diferente de "loading". Se essas condições forem verdadeiras, o código dentro dos parênteses é exibido: uma <section> com a imagem do cachorro e uma mensagem simpática. Em outras palavras, essa parte só aparece depois que a URL da imagem foi carregada, evitando mostrar algo durante o carregamento.
 
 # Arquivo: formswoman.module.css
 
